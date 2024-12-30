@@ -1,0 +1,62 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.shadow-sm {
+    max-width: 100% !important;
+}
+.shadow-sm img{
+    width: 100%;
+    height: 100%;
+}
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+.card-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+/* Garantir que as boxes tenham tamanhos fixos */
+/* Garantir que imagens maiores ocupem largura total */
+/* Estilização para caixas menores */
+.thumbnail-card {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Imagens menores sem cortes */
+.thumbnail-img {
+    width: 100%;
+    height: auto; /* Mantém a proporção original da imagem */
+    object-fit: contain; /* Garante que a imagem se ajuste sem cortes */
+    background-color: #f8f9fa; /* Adiciona fundo para áreas vazias */
+}
+
+/* Estilização para caixas maiores */
+.large-thumbnail .thumbnail-card {
+    min-height: 500px; /* Altura para imagens maiores */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-primary {
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
